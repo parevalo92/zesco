@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>AquaClean | Limpieza de Cisternas & Mantenimiento</title>
+  <title>ZESCO | Servicio de Asbestos & Remoción Segura</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
@@ -21,20 +21,25 @@
   <header>
     <nav class="navbar section-content">
       <a href="#" class="nav-logo" aria-label="Ir al inicio">
-        <h2 class="logo-text">AquaClean</h2>
-        <span class="logo-sub">Cisternas • Mantenimiento • Desinfección</span>
+        <img src="img/logo.png" alt="Zesco Logo" class="logo-img">
+        <span class="logo-sub">Asbestos • Inspección • Remoción Segura</span>
       </a>
 
       <ul class="nav-menu">
         <button id="menu-close-button" class="fas fa-times" aria-label="Cerrar menú"></button>
 
-        <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-        <li class="nav-item"><a href="#about" class="nav-link">Nosotros</a></li>
-        <li class="nav-item"><a href="#services" class="nav-link">Servicios</a></li>
-        <li class="nav-item"><a href="#testimonials" class="nav-link">Reseñas</a></li>
-        <li class="nav-item"><a href="#gallery" class="nav-link">Trabajos</a></li>
-        <li class="nav-item"><a href="#contactus" class="nav-link">Contacto</a></li>
+        <li class="nav-item"><a href="#home" class="nav-link" data-i18n="nav.home">Inicio</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link" data-i18n="nav.about">Nosotros</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link" data-i18n="nav.services">Servicios</a></li>
+        <li class="nav-item"><a href="#testimonials" class="nav-link" data-i18n="nav.testimonials">Reseñas</a></li>
+        <li class="nav-item"><a href="#gallery" class="nav-link" data-i18n="nav.gallery">Trabajos</a></li>
+        <li class="nav-item"><a href="#contactus" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
       </ul>
+
+      <div class="lang-switcher">
+        <button type="button" data-lang-button="esp">ESP</button>
+        <button type="button" data-lang-button="eng">ENG</button>
+      </div>
 
       <button id="menu-open-button" class="fas fa-bars" aria-label="Abrir menú"></button>
     </nav>
@@ -45,43 +50,61 @@
     <section class="hero-section" id="home">
       <div class="section-content hero-grid">
         <div class="hero-details">
-          <p class="badge"><i class="fa-solid fa-droplet"></i> Servicio profesional • Seguro • Garantizado</p>
-          <h1 class="title">Limpieza y desinfección de cisternas</h1>
-          <h2 class="subtitle">Agua más limpia. Tanques más seguros. Tranquilidad para tu hogar o negocio.</h2>
+          <p class="badge">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span data-i18n="hero.badge">Servicio profesional • Seguro • Cumplimiento y control</span>
+          </p>
 
-          <p class="description">
-            Realizamos limpieza profunda, desinfección y mantenimiento preventivo de cisternas, tinacos y tanques.
-            Eliminamos sedimentos, lodo y contaminación con procedimientos seguros y productos aptos para uso sanitario.
+          <h1 class="title" data-i18n="hero.title">Inspección y remoción segura de asbestos</h1>
+          <h2 class="subtitle" data-i18n="hero.subtitle">Protegemos tu propiedad, tu equipo y tu entorno con procesos controlados y profesionales.</h2>
+
+          <p class="description" data-i18n="hero.description">
+            Brindamos evaluación, contención, retiro y disposición controlada de materiales con asbestos en techos, paredes, tuberías, láminas y otras superficies. Trabajamos con protocolos de seguridad, equipos adecuados y enfoque preventivo.
           </p>
 
           <div class="hero-points">
-            <div class="point"><i class="fa-solid fa-shield-halved"></i> Técnicos capacitados</div>
-            <div class="point"><i class="fa-solid fa-screwdriver-wrench"></i> Mantenimiento preventivo</div>
-            <div class="point"><i class="fa-solid fa-clock"></i> Atención rápida</div>
+            <div class="point">
+              <i class="fa-solid fa-user-shield"></i>
+              <span data-i18n="hero.point1">Personal capacitado</span>
+            </div>
+            <div class="point">
+              <i class="fa-solid fa-helmet-safety"></i>
+              <span data-i18n="hero.point2">Procesos de contención</span>
+            </div>
+            <div class="point">
+              <i class="fa-solid fa-clock"></i>
+              <span data-i18n="hero.point3">Atención rápida</span>
+            </div>
           </div>
 
           <div class="buttons">
-            <a href="#contactus" class="btn btn-primary">Cotizar ahora</a>
-            <a href="#services" class="btn btn-outline">Ver servicios</a>
+            <a href="#contactus" class="btn btn-primary" data-i18n="hero.quote">Solicitar evaluación</a>
+            <a href="#services" class="btn btn-outline" data-i18n="hero.services">Ver servicios</a>
           </div>
 
           <div class="mini-info">
-            <span><i class="fa-solid fa-phone"></i> WhatsApp: +503 0000-0000</span>
-            <span><i class="fa-solid fa-location-dot"></i> Servicio a domicilio</span>
+            <span>
+              <i class="fa-solid fa-phone"></i>
+              <span data-i18n="hero.whatsapp">WhatsApp: +503 0000-0000</span>
+            </span>
+            <span>
+              <i class="fa-solid fa-location-dot"></i>
+              <span data-i18n="hero.location">Servicio a domicilio y en obra</span>
+            </span>
           </div>
         </div>
 
         <div class="hero-card">
           <div class="card">
-            <h3>Checklist de seguridad</h3>
+            <h3 data-i18n="checklist.title">Checklist de seguridad</h3>
             <ul class="checklist">
-              <li><i class="fa-solid fa-circle-check"></i> Inspección de válvulas y flotador</li>
-              <li><i class="fa-solid fa-circle-check"></i> Remoción de sedimentos</li>
-              <li><i class="fa-solid fa-circle-check"></i> Lavado a presión</li>
-              <li><i class="fa-solid fa-circle-check"></i> Desinfección y enjuague</li>
-              <li><i class="fa-solid fa-circle-check"></i> Recomendaciones de mantenimiento</li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="checklist.item1">Inspección inicial del área</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="checklist.item2">Delimitación y contención</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="checklist.item3">Retiro controlado del material</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="checklist.item4">Empaque y manejo seguro</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="checklist.item5">Recomendaciones posteriores</span></li>
             </ul>
-            <p class="card-note">Ideal cada 6–12 meses según uso y condiciones.</p>
+            <p class="card-note" data-i18n="checklist.note">Ideal para viviendas, bodegas, comercios, clínicas y remodelaciones.</p>
           </div>
         </div>
       </div>
@@ -91,30 +114,27 @@
     <section class="about-section" id="about">
       <div class="section-content about-grid">
         <div class="about-image-wrapper">
-          <!-- Cambia la imagen por la tuya -->
-          <img src="img/about.png" alt="Equipo de mantenimiento realizando limpieza" class="about-image">
+          <img src="img/about.png" alt="Equipo realizando trabajo de inspección y remoción segura" class="about-image">
         </div>
 
         <div class="about-details">
-          <h2 class="section-title">Nosotros</h2>
-          <p class="text">
-            Somos un equipo especializado en limpieza de cisternas y mantenimiento de sistemas de almacenamiento de agua.
-            Trabajamos con protocolos seguros y un enfoque preventivo: no solo limpiamos, también detectamos problemas
-            como fugas, válvulas dañadas, flotadores defectuosos y acumulación de sedimentos.
+          <h2 class="section-title" data-i18n="about.title">Nosotros</h2>
+          <p class="text" data-i18n="about.text">
+            Somos un equipo especializado en evaluación, manejo y remoción segura de materiales con asbestos. Nuestro enfoque prioriza la seguridad del entorno, el control del área de trabajo y la reducción de riesgos durante cada etapa del servicio.
           </p>
 
           <div class="stats">
             <div class="stat">
-              <span class="num">+5</span>
-              <span class="label">Años de experiencia</span>
+              <span class="num" data-i18n="about.stat1.num">+5</span>
+              <span class="label" data-i18n="about.stat1.label">Años de experiencia</span>
             </div>
             <div class="stat">
-              <span class="num">+1,000</span>
-              <span class="label">Servicios realizados</span>
+              <span class="num" data-i18n="about.stat2.num">+500</span>
+              <span class="label" data-i18n="about.stat2.label">Servicios realizados</span>
             </div>
             <div class="stat">
-              <span class="num">24/7</span>
-              <span class="label">Atención (según agenda)</span>
+              <span class="num" data-i18n="about.stat3.num">24/7</span>
+              <span class="label" data-i18n="about.stat3.label">Atención (según agenda)</span>
             </div>
           </div>
 
@@ -129,44 +149,44 @@
 
     <!-- Services -->
     <section class="services-section" id="services">
-      <h2 class="section-title">Servicios</h2>
+      <h2 class="section-title" data-i18n="services.title">Servicios</h2>
 
       <div class="section-content">
         <ul class="services-list">
           <li class="services-item">
-            <div class="service-icon"><i class="fa-solid fa-water"></i></div>
-            <h3 class="name">Limpieza de cisternas</h3>
-            <p class="text">Remoción de sedimentos, lodo y suciedad acumulada. Lavado y sanitización.</p>
+            <div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h3 class="name" data-i18n="services.item1.name">Inspección de materiales</h3>
+            <p class="text" data-i18n="services.item1.text">Evaluación visual del área y detección de materiales sospechosos en techos, muros, tuberías y estructuras.</p>
           </li>
 
           <li class="services-item">
-            <div class="service-icon"><i class="fa-solid fa-droplet"></i></div>
-            <h3 class="name">Desinfección sanitaria</h3>
-            <p class="text">Proceso de desinfección con productos aptos para superficies en contacto con agua.</p>
+            <div class="service-icon"><i class="fa-solid fa-shield-virus"></i></div>
+            <h3 class="name" data-i18n="services.item2.name">Contención del área</h3>
+            <p class="text" data-i18n="services.item2.text">Aislamiento de la zona de trabajo para reducir dispersión y proteger a las personas cercanas.</p>
           </li>
 
           <li class="services-item">
-            <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-            <h3 class="name">Mantenimiento preventivo</h3>
-            <p class="text">Revisión de válvulas, flotador, tapa, conexiones y recomendaciones para evitar fallas.</p>
+            <div class="service-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+            <h3 class="name" data-i18n="services.item3.name">Remoción segura</h3>
+            <p class="text" data-i18n="services.item3.text">Retiro controlado de materiales con asbestos utilizando procedimientos seguros y equipo de protección.</p>
           </li>
 
           <li class="services-item">
-            <div class="service-icon"><i class="fa-solid fa-faucet-drip"></i></div>
-            <h3 class="name">Detección de fugas</h3>
-            <p class="text">Inspección básica para identificar pérdidas y posibles puntos de filtración.</p>
+            <div class="service-icon"><i class="fa-solid fa-box"></i></div>
+            <h3 class="name" data-i18n="services.item4.name">Empaque y manejo</h3>
+            <p class="text" data-i18n="services.item4.text">Embalaje adecuado del material retirado para su manipulación controlada y traslado correspondiente.</p>
           </li>
 
           <li class="services-item">
             <div class="service-icon"><i class="fa-solid fa-building"></i></div>
-            <h3 class="name">Servicio residencial y comercial</h3>
-            <p class="text">Casas, edificios, negocios, clínicas, bodegas y más. Programación por agenda.</p>
+            <h3 class="name" data-i18n="services.item5.name">Servicio residencial y comercial</h3>
+            <p class="text" data-i18n="services.item5.text">Atendemos casas, bodegas, locales, edificios, clínicas, fábricas y proyectos de remodelación.</p>
           </li>
 
           <li class="services-item">
-            <div class="service-icon"><i class="fa-solid fa-calendar-check"></i></div>
-            <h3 class="name">Planes periódicos</h3>
-            <p class="text">Programa limpieza cada 6 o 12 meses con recordatorio y tarifa preferencial.</p>
+            <div class="service-icon"><i class="fa-solid fa-file-shield"></i></div>
+            <h3 class="name" data-i18n="services.item6.name">Evaluación preventiva</h3>
+            <p class="text" data-i18n="services.item6.text">Recomendaciones para manejo futuro, remodelaciones seguras y control de áreas con riesgo potencial.</p>
           </li>
         </ul>
       </div>
@@ -174,7 +194,7 @@
 
     <!-- Testimonials -->
     <section class="testimonials-section" id="testimonials">
-      <h2 class="section-title">Reseñas</h2>
+      <h2 class="section-title" data-i18n="testimonials.title">Reseñas</h2>
 
       <div class="section-content">
         <div class="slider-container swiper">
@@ -182,30 +202,30 @@
             <ul class="testimonials-list swiper-wrapper">
               <li class="testimonial swiper-slide">
                 <div class="avatar"><i class="fa-solid fa-user"></i></div>
-                <h3 class="name">María G.</h3>
+                <h3 class="name" data-i18n="testimonials.1.name">María G.</h3>
                 <p class="stars">★★★★★</p>
-                <i class="feedback">“Excelente trabajo, dejaron la cisterna impecable y explicaron todo el proceso.”</i>
+                <i class="feedback" data-i18n="testimonials.1.feedback">Trabajo muy ordenado y profesional. Explicaron el proceso y dejaron todo controlado.</i>
               </li>
 
               <li class="testimonial swiper-slide">
                 <div class="avatar"><i class="fa-solid fa-user"></i></div>
-                <h3 class="name">Carlos R.</h3>
+                <h3 class="name" data-i18n="testimonials.2.name">Carlos R.</h3>
                 <p class="stars">★★★★★</p>
-                <i class="feedback">“Muy puntuales y cuidadosos. También revisaron el flotador y lo ajustaron.”</i>
+                <i class="feedback" data-i18n="testimonials.2.feedback">Llegaron puntuales, delimitaron el área y trabajaron con mucho cuidado.</i>
               </li>
 
               <li class="testimonial swiper-slide">
                 <div class="avatar"><i class="fa-solid fa-user"></i></div>
-                <h3 class="name">Clínica Santa Ana</h3>
+                <h3 class="name" data-i18n="testimonials.3.name">Bodega Central</h3>
                 <p class="stars">★★★★★</p>
-                <i class="feedback">“Servicio profesional y ordenado. Ideal para instalaciones comerciales.”</i>
+                <i class="feedback" data-i18n="testimonials.3.feedback">Nos ayudaron en una remodelación con excelente organización y atención.</i>
               </li>
 
               <li class="testimonial swiper-slide">
                 <div class="avatar"><i class="fa-solid fa-user"></i></div>
-                <h3 class="name">Edificio Centro</h3>
+                <h3 class="name" data-i18n="testimonials.4.name">Edificio San Benito</h3>
                 <p class="stars">★★★★★</p>
-                <i class="feedback">“Buen precio y buena comunicación. Recomendados.”</i>
+                <i class="feedback" data-i18n="testimonials.4.feedback">Buena comunicación, buena logística y servicio serio desde la visita inicial.</i>
               </li>
             </ul>
 
@@ -219,59 +239,79 @@
 
     <!-- Gallery -->
     <section class="gallery-section" id="gallery">
-      <h2 class="section-title">Trabajos realizados</h2>
+      <h2 class="section-title" data-i18n="gallery.title">Trabajos realizados</h2>
 
       <div class="section-content">
         <ul class="gallery-list">
-          <li class="gallery-item"><img src="img/img1.png" alt="Antes y después de limpieza" class="gallery-image"></li>
-          <li class="gallery-item"><img src="img/img1.png" alt="Equipo realizando mantenimiento" class="gallery-image"></li>
-          <li class="gallery-item"><img src="img/img1.png" alt="Desinfección de tanque" class="gallery-image"></li>
-          <li class="gallery-item"><img src="img/img1.png" alt="Lavado a presión" class="gallery-image"></li>
-          <li class="gallery-item"><img src="img/img1.png" alt="Inspección de válvulas" class="gallery-image"></li>
-          <li class="gallery-item"><img src="img/img1.png" alt="Servicio residencial" class="gallery-image"></li>
+          <li class="gallery-item"><img src="img/img1.png" alt="Inspección de área de trabajo" class="gallery-image"></li>
+          <li class="gallery-item"><img src="img/img2.png" alt="Preparación y contención del área" class="gallery-image"></li>
+          <li class="gallery-item"><img src="img/img3.png" alt="Remoción controlada de material" class="gallery-image"></li>
+          <li class="gallery-item"><img src="img/img3.png" alt="Uso de equipo de protección" class="gallery-image"></li>
+          <li class="gallery-item"><img src="img/img1.png" alt="Trabajo en techo y estructura" class="gallery-image"></li>
+          <li class="gallery-item"><img src="img/img2.png" alt="Servicio en propiedad comercial" class="gallery-image"></li>
         </ul>
-        <p class="gallery-note">Tip: usa fotos reales (antes/después) para vender muchísimo más.</p>
+        <p class="gallery-note" data-i18n="gallery.note">Tip: usa fotos reales del proceso y del equipo para generar más confianza.</p>
       </div>
     </section>
 
     <!-- Contact -->
     <section class="contact-section" id="contactus">
-      <h2 class="section-title">Contacto</h2>
+      <h2 class="section-title" data-i18n="contact.title">Contacto</h2>
 
       <div class="section-content contact-grid">
         <ul class="contact-info-list">
           <li class="contact-info">
             <i class="fa-solid fa-location-dot"></i>
-            <p>San Salvador y alrededores (servicio a domicilio)</p>
+            <p data-i18n="contact.address">San Salvador y alrededores (servicio a domicilio y en obra)</p>
           </li>
 
           <li class="contact-info">
             <i class="fa-regular fa-envelope"></i>
-            <p>contacto@aquaclean.com</p>
+            <p data-i18n="contact.email">contacto@zesco.com</p>
           </li>
 
           <li class="contact-info">
             <i class="fa-solid fa-phone"></i>
-            <p>+503 0000-0000</p>
+            <p data-i18n="contact.phone">+503 0000-0000</p>
           </li>
 
           <li class="contact-info">
             <i class="fa-regular fa-clock"></i>
-            <p>Lun - Sáb : 8:00 AM - 6:00 PM</p>
+            <p data-i18n="contact.hours">Lun - Sáb : 8:00 AM - 6:00 PM</p>
           </li>
 
           <li class="contact-info">
             <i class="fa-brands fa-whatsapp"></i>
-            <p>WhatsApp: +503 0000-0000</p>
+            <p data-i18n="contact.whatsapp">WhatsApp: +503 0000-0000</p>
           </li>
         </ul>
 
         <form action="" class="contact-form">
-          <input type="text" placeholder="Nombre" class="form-input" required>
-          <input type="email" placeholder="Correo" class="form-input" required>
-          <textarea placeholder="Cuéntanos el tamaño de la cisterna y tu zona" class="form-input" required></textarea>
-          <button class="submit-button" type="submit">Enviar</button>
-          <p class="form-note">Respondemos lo más pronto posible. También puedes escribir por WhatsApp.</p>
+          <input
+            type="text"
+            placeholder="Nombre"
+            class="form-input"
+            required
+            data-i18n-placeholder="contact.namePlaceholder"
+          >
+
+          <input
+            type="email"
+            placeholder="Correo"
+            class="form-input"
+            required
+            data-i18n-placeholder="contact.emailPlaceholder"
+          >
+
+          <textarea
+            placeholder="Cuéntanos qué tipo de material deseas inspeccionar o retirar"
+            class="form-input"
+            required
+            data-i18n-placeholder="contact.messagePlaceholder"
+          ></textarea>
+
+          <button class="submit-button" type="submit" data-i18n="contact.send">Enviar</button>
+          <p class="form-note" data-i18n="contact.note">Respondemos lo más pronto posible. También puedes escribir por WhatsApp.</p>
         </form>
       </div>
     </section>
@@ -279,7 +319,7 @@
     <!-- Footer -->
     <footer class="footer-section">
       <div class="section-content footer-grid">
-        <p class="copyright-text">© 2026 AquaClean. Todos los derechos reservados.</p>
+        <p class="copyright-text" data-i18n="footer.copy">© 2026 ZESCO. Todos los derechos reservados.</p>
 
         <div class="social-link-list">
           <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
@@ -288,17 +328,16 @@
         </div>
 
         <p class="policy-text">
-          <a href="#" class="policy-link">Privacidad</a>
+          <a href="#" class="policy-link" data-i18n="footer.privacy">Privacidad</a>
           <span class="separator">•</span>
-          <a href="#" class="policy-link">Términos</a>
+          <a href="#" class="policy-link" data-i18n="footer.terms">Términos</a>
         </p>
       </div>
     </footer>
   </main>
 
-  <!-- Swiper -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- Script -->
   <script src="script.js"></script>
+  <script src="lang-switcher.js"></script>
 </body>
 </html>
