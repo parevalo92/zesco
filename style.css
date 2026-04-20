@@ -861,3 +861,149 @@ textarea.form-input{
     font-size: 0.74rem;
   }
 }
+
+/* =========================
+   CLIENT PORTAL (DARK MODE)
+========================= */
+
+.client-portal-section {
+  padding: 90px 0;
+  background: var(--black-800);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.client-portal-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* TEXT */
+
+.client-portal-copy .section-title {
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.portal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(169, 195, 154, 0.1);
+  color: var(--primary-light);
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.portal-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 600px;
+  margin-bottom: 24px;
+}
+
+/* LISTA */
+
+.portal-list {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+}
+
+.portal-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+}
+
+.portal-list i {
+  color: var(--primary-light);
+  font-size: 0.9rem;
+}
+
+/* CARD */
+
+.client-portal-card {
+  display: flex;
+  justify-content: center;
+}
+
+.portal-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-l);
+  padding: 32px 26px;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+
+.portal-icon {
+  font-size: 2.2rem;
+  color: var(--primary-light);
+  margin-bottom: 16px;
+}
+
+.portal-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: var(--white);
+}
+
+.portal-card p {
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* BOTÓN */
+
+.portal-login-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 52px;
+  padding: 14px 20px;
+  border-radius: 999px;
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--primary-soft)
+  );
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover elegante */
+.portal-login-button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(
+    135deg,
+    var(--primary-strong),
+    var(--primary)
+  );
+  box-shadow: 0 10px 25px rgba(58, 84, 44, 0.4);
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .client-portal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portal-card {
+    max-width: 100%;
+  }
+}
+

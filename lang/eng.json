@@ -76,5 +76,15 @@
 
   "footer.copy": "© 2026 AquaClean. All rights reserved.",
   "footer.privacy": "Privacy",
-  "footer.terms": "Terms"
+  "footer.terms": "Terms",
+
+"portal.badge": "Client access",
+"portal.title": "Log in to view your files shared with us",
+"portal.text": "If you are already a client, you can access your portal to review documents, shared files, and materials related to your service.",
+"portal.item1": "Access shared files",
+"portal.item2": "Review submitted documents",
+"portal.item3": "Secure access from your account",
+"portal.cardTitle": "File portal",
+"portal.cardText": "Click the button below to log in and review the files shared with our team.",
+"portal.button": "Log in"
 }
